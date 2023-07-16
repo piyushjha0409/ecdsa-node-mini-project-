@@ -62,6 +62,16 @@ function Transfer({ address, setBalance, setPrivateKey, privateKey }) {
         ></input>
       </label>
 
+      {/* This is for the private key  */}
+      <label>
+        Private Key
+        <input
+          placeholder="Type key here"
+          value={privateKey}
+          onChange={setValue(setPrivateKey)}
+        ></input>
+      </label>
+
       <input type="submit" className="button" value="Transfer" />
     </form>
   );
